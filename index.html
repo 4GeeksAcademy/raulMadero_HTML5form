@@ -13,8 +13,8 @@
             <div class="alert alert-danger">
                 <p>Some fields are missing</p>
             </div>
-            <div class="d-flex justify-content-between">
-                <fieldset>
+            <div class="d-flex justify-content-between gap-2">
+                <fieldset class="w-75">
                     <label class="form-label" for="card">Card #</label>
                     <input class="form-control" id="card" type="number" placeholder="XXXXXXXXXXXXXXXXXXXXXX">
                 </fieldset>
@@ -24,21 +24,24 @@
                 </fieldset>
                 <fieldset>
                     <label class="form-label" for="amount">Amount</label>
-                    <input class="form-control" type="price" placeholder="Amount">
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input class="form-control" type="price" placeholder="Amount">
+                    </div>
                 </fieldset>
             </div>
-            <div class="d-flex justify-content-between">
-                <div>
-                    <fieldset>
+            <div class="d-flex gap-2">
+                <div class="w-50">
+                    <fieldset class="w-100">
                         <label class="form-label" for="name">First Name</label>
                         <input class="form-control" id="name" type="text">
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="w-100">
                         <label class="form-label" for="city">City</label>
                         <input class="form-control" id="city" type="text">
                     </fieldset>
                     <h5>We accept:</h5>
-                    <fieldset class="d-flex gap-2 bg-secondary rounded p-2">
+                    <fieldset class="d-flex gap-2 bg-secondary rounded p-2 w-50">
                         <label class="form-check-label" for="mastercard"><i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #ffffff;"></i></label>
                         <input class="form-check-input" id="mastercard" type="radio" name="cardtype">
                         <label class="form-check-label" for="visa"><i class="fa-brands fa-cc-visa fa-2xl" style="color: #ffffff;"></i></label>
@@ -49,22 +52,22 @@
                         <input class="form-check-input" id="discover" type="radio" name="cardtype">
                     </fieldset>
                 </div>
-                <div>
-                    <fieldset>
+                <div class="w-50">
+                    <fieldset class="w-100">
                         <label class="form-label" for="lastname">Last Name</label>
                         <input class="form-control" id="lastname" type="text">
                     </fieldset>
                     <div class="d-flex gap-2">
-                        <fieldset>
+                        <fieldset class="w-50">
                             <label class="form-label" for="state">State</label>
                             <input class="form-control" id="state" type="select">
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="w-50">
                             <label class="form-label" for="lastname">Postal Code</label>
                             <input class="form-control" id="lastname" type="number">
                         </fieldset>
                     </div>
-                    <fieldset>
+                    <fieldset class="w-100">
                         <label class="form-label" for="message">Message:</label>
                         <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
                     </fieldset>
